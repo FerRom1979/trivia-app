@@ -1,6 +1,6 @@
 export interface IFormLogin {
   name: string;
   email: string;
-  message: string;
+  messageRequired: string;
   age: number;
 }

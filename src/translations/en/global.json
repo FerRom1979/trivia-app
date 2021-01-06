@@ -1,0 +1,17 @@
+{
+  "startApp": {
+    "title": "Welcome to the question and answer game",
+    "subtitle": "Enter as a ",
+    "link-login-false": "invited",
+    "link-login-true": "check in"
+  },
+  "login": {
+    "title-form": "Log in",
+    "input-name": "name",
+    "input-email": "email",
+    "input-age": "age",
+    "button-start": "Start",
+    "link-back": "back to the start",
+    "message-error": "This field is required"
+  }
+}

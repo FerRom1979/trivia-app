@@ -1,23 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { createGlobalStyle } from 'styled-components';
+import { GlobalStyle } from './styleIndex';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-const GlobalStyle = createGlobalStyle`
-  body{
-    margin:0;
-    padding:0;
-    box-sizing: 'border-box';
-    list-style-type: 'none';
-    text-decoration: 'none';
-    width: 100%;
-    height: 100vh;
-  }
-  `;
+import { I18nextProvider } from 'react-i18next';
+import i18next from 'i18next';
+import globalEs from './translations/es/global.json';
+import globalEn from './translations/en/global.json';
+
+i18next.init({
+  interpolation: { escapeValue: false },
+  lng: 'es',
+  resources: {
+    es: {
+      global: globalEs,
+    },
+    en: {
+      global: globalEn,
+    },
+  },
+});
+
 ReactDOM.render(
   <React.StrictMode>
-    <GlobalStyle />
-    <App />
+    <I18nextProvider i18n={i18next}>
+      <GlobalStyle />
+
+      <App />
+    </I18nextProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
