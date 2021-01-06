@@ -40,3 +40,9 @@ export const Title = styled.h1`
 export const SubTitle = styled.h3`
   font-size: 30px;
 `;
+export const ButtonLenguge = styled.button`
+  margin-bottom: 0;
+  padding: 5px;
+  background-color: #1b4f72;
+  color: white;
+`;

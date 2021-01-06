@@ -1,0 +1,17 @@
+{
+  "startApp": {
+    "title": "Bienvenidos al juego de preguntas y respuesta ",
+    "subtitle": "Ingresa como ",
+    "link-login-false": "invitado",
+    "link-login-true": "registrarse"
+  },
+  "login": {
+    "title-form": "Iniciar sesión",
+    "input-name": "nombre",
+    "input-email": "email",
+    "input-age": "edad",
+    "button-start": "Empezar",
+    "link-back": "volver al inicio",
+    "message-error": "Este campo es obligatorio"
+  }
+}
