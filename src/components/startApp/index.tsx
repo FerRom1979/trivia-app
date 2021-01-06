@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 const StartApp = () => {
-  const { StyledWraper, TitleDiv, Title, SubTitle, ButtonLenguge } = style;
+  const { StyledWraper, TitleDiv, Title, SubTitle, ButtonLanguage } = style;
   const [t, i18n] = useTranslation('global');
   const [language, setLanguage] = useState('es');
 
@@ -18,7 +18,7 @@ const StartApp = () => {
   };
   return (
     <StyledWraper>
-      <ButtonLenguge onClick={() => onChangeLanguage()}> EN/ES</ButtonLenguge>
+      <ButtonLanguage onClick={() => onChangeLanguage()}> EN/ES</ButtonLanguage>
 
       <TitleDiv>
         <Title>{t('startApp.title')}</Title>

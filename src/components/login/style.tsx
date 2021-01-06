@@ -44,7 +44,7 @@ export const SpanForm = styled.span`
   color: #34495e;
   padding-top: 10px;
 `;
-export const ButtonLenguge = styled.button`
+export const ButtonLanguage = styled.button`
   margin-bottom: 0;
   padding: 5px;
   background-color: #1b4f72;

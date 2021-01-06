@@ -14,7 +14,7 @@ const Login = () => {
     InputForm,
     ButtonForm,
     SpanForm,
-    ButtonLenguge,
+    ButtonLanguage,
   } = style;
   const [t, i18n] = useTranslation('global');
   const [language, setLanguage] = useState('es');
@@ -34,7 +34,7 @@ const Login = () => {
 
   return (
     <MainDiv>
-      <ButtonLenguge onClick={() => onChangeLanguage()}> EN/ES</ButtonLenguge>
+      <ButtonLanguage onClick={() => onChangeLanguage()}> EN/ES</ButtonLanguage>
       <WrapperDiv>
         <div>
           <TitleForm>{t('login.title-form')}</TitleForm>
