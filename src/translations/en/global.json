@@ -13,5 +13,9 @@
     "button-start": "Start",
     "link-back": "back to the start",
     "message-error": "This field is required"
+  },
+  "welcome": {
+    "title": "ARE YOU READY TO TEST YOUR BRAIN LET'S GET STARTED",
+    "title-option": "HELLO"
   }
 }

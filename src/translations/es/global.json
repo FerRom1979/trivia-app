@@ -13,5 +13,9 @@
     "button-start": "Empezar",
     "link-back": "volver al inicio",
     "message-error": "Este campo es obligatorio"
+  },
+  "welcome": {
+    "title": "ESTAS PREPARADO PARA PONER A PRUEBA TU CEREBRO COMENCEMMOS",
+    "title-option": "HOLA"
   }
 }

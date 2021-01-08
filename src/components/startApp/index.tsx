@@ -1,31 +1,20 @@
-import React, { useState } from 'react';
-import * as style from './styles';
+import React from 'react';
+import * as style from './style';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 const StartApp = () => {
-  const { StyledWraper, TitleDiv, Title, SubTitle, ButtonLanguage } = style;
-  const [t, i18n] = useTranslation('global');
-  const [language, setLanguage] = useState('es');
+  const { StyledWraper, TitleDiv, Title, SubTitle } = style;
+  const [t] = useTranslation('global');
 
-  const onChangeLanguage = () => {
-    i18n.changeLanguage(language);
-    if (language === 'en') {
-      setLanguage('es');
-    } else {
-      setLanguage('en');
-    }
-  };
   return (
     <StyledWraper>
-      <ButtonLanguage onClick={() => onChangeLanguage()}> EN/ES</ButtonLanguage>
-
       <TitleDiv>
         <Title>{t('startApp.title')}</Title>
       </TitleDiv>
       <SubTitle>
         {t('startApp.subtitle')}
-        <Link to="/homepage">{t('startApp.link-login-false')}</Link> /{' '}
+        <Link to="/welcome">{t('startApp.link-login-false')}</Link> /{' '}
         <Link to="/login">{t('startApp.link-login-true')}</Link>
       </SubTitle>
     </StyledWraper>
