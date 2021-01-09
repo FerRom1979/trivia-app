@@ -7,7 +7,7 @@ export const MainDiv = styled.div`
   align-items: center;
   align-content: stretch;
   width: 100%;
-  height: 100vh;
+  height: 96vh;
 `;
 export const LoginForm = styled.form`
   display: flex;

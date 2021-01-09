@@ -6,10 +6,9 @@ import { useTranslation } from 'react-i18next';
 
 const Welcome = () => {
   const { StyledWraper, Title } = style;
-  const users = useSelector((state: any) => state.users);
+  const users = useSelector((state: any) => state.login.users);
   const history = useHistory();
   const [t] = useTranslation('global');
-  console.log(users);
 
   setTimeout(() => {
     history.push('/homepage');

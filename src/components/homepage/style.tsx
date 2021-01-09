@@ -2,11 +2,12 @@ import styled from 'styled-components';
 
 export const WrapperDiv = styled.div`
   width: 100%;
-  height: 90vh;
+  height: 96vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #bb8fce;
 `;
 export const FormControl = styled.form`
   display: flex;
@@ -28,10 +29,13 @@ export const InputForm = styled.input`
 export const DivMenssage = styled.div`
   min-width: 200px;
   max-width: 500px;
+  border: 3px solid #1b4f72;
+  border-radius: 5px;
+  margin-bottom: 20px;
 `;
 export const PMenssage = styled.p`
   font-size: 40px;
-  color: red;
+  color: black;
   text-align: center;
 `;
 export const SelectForm = styled.select`
@@ -61,5 +65,9 @@ export const ButtonForm = styled.button`
   :hover {
     background-color: #008cba;
     color: white;
+    text-align: center;
   }
+`;
+export const SpanMessageError = styled.span`
+  color: red;
 `;

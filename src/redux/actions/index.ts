@@ -1,13 +1,13 @@
 import { GET_DATA_LOGIN, GET_DATA_API } from './types';
 import axios from 'axios';
-import { IDataApi, IUser } from '../../types';
+import { IUser } from '../../types';
 
 export const addDataLogin = (user: IUser) => ({
   type: GET_DATA_LOGIN,
   payload: user,
 });
 
-export const addDataApi = (amount: IDataApi, difficulty: IDataApi, typeform: IDataApi) => async (
+export const addDataApi = (amount: number, difficulty: string, typeform: string) => async (
   dispatch: any
 ) => {
   try {

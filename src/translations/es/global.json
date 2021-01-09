@@ -17,5 +17,20 @@
   "welcome": {
     "title": "ESTAS PREPARADO PARA PONER A PRUEBA TU CEREBRO COMENCEMMOS",
     "title-option": "HOLA"
+  },
+  "homepage": {
+    "message": "Empecemos configurando las preguntas segun el nivel de dificultad que busques y la forma de juego que prefieras",
+    "span-form-one": "Cantidad de preguntas",
+    "span-form-two": "Rango de dificultad",
+    "span-form-three": "Forma de juego",
+    "span-message-error": "numero entre 1 y 50",
+    "option-one": "Aleatoria",
+    "option-two": "Facil",
+    "option-three": "Medio",
+    "option-four": "Dificil",
+    "option-five": "Aleatoria",
+    "option-six": "Multiple choise",
+    "option-seven": "Verdadero o falso",
+    "button-form": "Cargar"
   }
 }

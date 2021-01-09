@@ -8,9 +8,7 @@ import i18next from 'i18next';
 import globalEs from './translations/es/global.json';
 import globalEn from './translations/en/global.json';
 import { Provider } from 'react-redux';
-import generateStore from './redux/store';
-
-const store = generateStore();
+import { store } from './redux/store';
 
 i18next.init({
   interpolation: { escapeValue: false },

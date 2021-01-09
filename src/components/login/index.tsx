@@ -11,7 +11,7 @@ import { useHistory } from 'react-router-dom';
 const Login = () => {
   const history = useHistory();
   const dispatch = useDispatch();
-  const user = useSelector((state: any) => state.users);
+  const user = useSelector((state: any) => state.login.users);
   const { MainDiv, LoginForm, TitleForm, WrapperDiv, InputForm, ButtonForm, SpanForm } = style;
   const [t] = useTranslation('global');
 
@@ -23,14 +23,13 @@ const Login = () => {
       age: data.age,
     };
     dispatch(addDataLogin(newUser));
+
     e.target.reset();
   };
-  console.log(user.length);
-  const test = () => {
+  if (user.length !== 0)
     setTimeout(() => {
       history.push('/welcome');
     }, 1000);
-  };
 
   return (
     <MainDiv>
@@ -62,9 +61,7 @@ const Login = () => {
             />
             {errors.messageRequired && <span>{t('login.message-error')}</span>}
 
-            <ButtonForm type="submit" onClick={test}>
-              {t('login.button-start')}
-            </ButtonForm>
+            <ButtonForm type="submit">{t('login.button-start')}</ButtonForm>
 
             <Link to="/">
               <SpanForm>{t('login.link-back')}</SpanForm>
