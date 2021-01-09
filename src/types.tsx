@@ -5,13 +5,12 @@ export interface IFormLogin {
   age: number;
 }
 export interface IFormQuestions {
-  category: string;
   questions: number;
   difficulty: string;
   type: string;
 }
 export interface IDataApi {
-  amount: number;
+  amount: string;
   difficulty: string;
   typeform: string;
 }

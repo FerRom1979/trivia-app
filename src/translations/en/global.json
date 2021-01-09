@@ -17,5 +17,20 @@
   "welcome": {
     "title": "ARE YOU READY TO TEST YOUR BRAIN LET'S GET STARTED",
     "title-option": "HELLO"
+  },
+  "homepage": {
+    "message": "Let's start by configuring the questions according to the level of difficulty you are looking for and the form game of your choice",
+    "span-form-one": "Number of questions",
+    "span-form-two": "Difficulty range",
+    "span-form-three": "Game form",
+    "span-message-error": "Number between 1 and 50",
+    "option-one": "Randon",
+    "option-two": "Easy",
+    "option-three": "Mediun",
+    "option-four": "Hard",
+    "option-five": "Randon",
+    "option-six": "Multiple choise",
+    "option-seven": "True and False",
+    "button-form": "Save"
   }
 }
