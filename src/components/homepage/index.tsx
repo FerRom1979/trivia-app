@@ -58,7 +58,7 @@ const Hompage = () => {
           )}
 
           <SpanForm>{t('homepage.span-form-two')}</SpanForm>
-          <SelectForm name="difficulty" ref={register}>
+          <SelectForm name="difficulty" ref={register({ required: true })}>
             <option value=" ">{t('homepage.option-one')}</option>
             <option value="easy">{t('homepage.option-two')}</option>
             <option value="medium">{t('homepage.option-three')}</option>
@@ -66,7 +66,7 @@ const Hompage = () => {
           </SelectForm>
 
           <SpanForm>{t('homepage.span-form-three')}</SpanForm>
-          <SelectForm name="type" ref={register}>
+          <SelectForm name="type" ref={register({ required: true })}>
             <option value=" ">{t('homepage.option-five')}</option>
             <option value="multiple">{t('homepage.option-six')}</option>
             <option value="boolean">{t('homepage.option-seven')}</option>
