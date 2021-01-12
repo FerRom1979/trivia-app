@@ -15,7 +15,7 @@
     "message-error": "This field is required"
   },
   "welcome": {
-    "title": "ARE YOU READY TO TEST YOUR BRAIN LET'S GET STARTED",
+    "title": "YOU ARE PREPARED TO TEST YOUR KNOWLEDGE",
     "title-option": "HELLO"
   },
   "homepage": {
@@ -32,5 +32,26 @@
     "option-six": "Multiple choise",
     "option-seven": "True and False",
     "button-form": "Save"
+  },
+  "cardQuestions": {
+    "title": "Category",
+    "span-one": "Difficulty",
+    "span-two": "Game type",
+    "span-three": "Question number",
+    "subtitle": "When finished, press submit to see the score achieved",
+    "button": "Send"
+  },
+  "cardinfopoints": {
+    "title-header": "Excellent you have achieved a percentage of successes",
+    "title-header-two": "Great game you managed to exceed the average number of hits",
+    "title-header-three": "Your score was not good, try again.",
+    "p-one": "Summary of your game",
+    "p-two": "Number of questions",
+    "p-three": "Correct answers",
+    "p-four": "Wrong answers",
+    "p-five": "Percentage of hits",
+    "title-final": "I hope you enjoyed the game, try again or start a new game",
+    "link-one": "Play again",
+    "link-two": "New game"
   }
 }
