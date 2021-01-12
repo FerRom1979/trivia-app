@@ -15,11 +15,11 @@
     "message-error": "Este campo es obligatorio"
   },
   "welcome": {
-    "title": "ESTAS PREPARADO PARA PONER A PRUEBA TU CEREBRO COMENCEMMOS",
+    "title": "ESTÁS PREPARADO PARA PONER A PRUEBA TUS CONOCIMIENTOS",
     "title-option": "HOLA"
   },
   "homepage": {
-    "message": "Empecemos configurando las preguntas segun el nivel de dificultad que busques y la forma de juego que prefieras",
+    "message": "Empecemos configurando las preguntas según el nivel de dificultad que busques y la forma de juego que prefieras",
     "span-form-one": "Cantidad de preguntas",
     "span-form-two": "Rango de dificultad",
     "span-form-three": "Forma de juego",
@@ -32,5 +32,26 @@
     "option-six": "Multiple choise",
     "option-seven": "Verdadero o falso",
     "button-form": "Cargar"
+  },
+  "cardQuestions": {
+    "title": "Categoria",
+    "span-one": "Dificultad",
+    "span-two": "Tipo de juego",
+    "span-three": "Numero de pregunta",
+    "subtitle": "Cuando termine, presione enviar para ver la puntuación obtenida",
+    "button": "Enviar"
+  },
+  "cardinfopoints": {
+    "title-header": "Excelente has logrado un porcentaje de aciertos ",
+    "title-header-two": "Gran partida lograste superar la media de aciertos",
+    "title-header-three": "Tu puntaje no ha sido bueno inténtalo de nuevo",
+    "p-one": "Resumen de tu juego",
+    "p-two": "Cantidad de preguntas",
+    "p-three": "Respuestas correctas",
+    "p-four": "Respuesta incorrectas",
+    "p-five": "Porcentaje de aciertos",
+    "title-final": "Espero que hayas disfrutado el juego vuelve a intentarlo o comienza una partida nueva",
+    "link-one": "Jugar de nuevo",
+    "link-two": "Jugar de nuevo"
   }
 }

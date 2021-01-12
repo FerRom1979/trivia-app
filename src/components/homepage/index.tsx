@@ -5,8 +5,10 @@ import * as style from './style';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 import { addDataApi } from '../../redux/actions/index';
+import { useHistory } from 'react-router-dom';
 
 const Hompage = () => {
+  const history = useHistory();
   const dispatch = useDispatch();
   const dataApi = useSelector((state: any) => state.api.data.results);
   const [t] = useTranslation('global');
@@ -33,6 +35,10 @@ const Hompage = () => {
     e.target.reset();
   };
   console.log(dataApi);
+  if (dataApi !== undefined)
+    setTimeout(() => {
+      history.push('/cardquestions');
+    }, 1000);
 
   return (
     <WrapperDiv>

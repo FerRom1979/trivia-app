@@ -20,3 +20,11 @@ export interface IUser {
   email: string;
   age: number;
 }
+export interface ICardQuestions {
+  difficulty: string;
+  type: string;
+  category: string;
+  question: string;
+  correct_answer: string;
+  incorrect_answers: string;
+}

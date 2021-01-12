@@ -1,2 +1,3 @@
 export const GET_DATA_LOGIN = 'GET_DATA_LOGIN';
 export const GET_DATA_API = 'GET_DATA_API';
+export const COUNTER_POINTS_DATA = 'COUNTER_POINTS_DATA';

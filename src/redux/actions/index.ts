@@ -1,4 +1,4 @@
-import { GET_DATA_LOGIN, GET_DATA_API } from './types';
+import { GET_DATA_LOGIN, GET_DATA_API, COUNTER_POINTS_DATA } from './types';
 import axios from 'axios';
 import { IUser } from '../../types';
 
@@ -22,3 +22,8 @@ export const addDataApi = (amount: number, difficulty: string, typeform: string)
     console.log(error);
   }
 };
+
+export const counterPoint = (point: any) => ({
+  type: COUNTER_POINTS_DATA,
+  payload: point,
+});
