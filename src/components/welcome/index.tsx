@@ -12,7 +12,7 @@ const Welcome = () => {
 
   setTimeout(() => {
     history.push('/homepage');
-  }, 5000);
+  }, 4000);
   return (
     <StyledWraper>
       <Title>

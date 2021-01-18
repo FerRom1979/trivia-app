@@ -23,7 +23,7 @@ export const addDataApi = (amount: number, difficulty: string, typeform: string)
   }
 };
 
-export const counterPoint = (point: any) => ({
+export const counterPoint = (point: number) => ({
   type: COUNTER_POINTS_DATA,
   payload: point,
 });
