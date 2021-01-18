@@ -19,6 +19,10 @@ export const StyledWraper = styled.div`
 `;
 
 export const Title = styled.h1`
-  color: #e74c3c;
-  font-size: 30px;
+  background-color: white;
+  padding: 10px;
+  color: black;
+  font-size: 25px;
+  font-weight: 900;
+  border: solid 3px black;
 `;

@@ -14,23 +14,17 @@ const CardQuestions = () => {
   const [control, setControl] = useState(0);
   const dataApi = useSelector((state: any) => state.api.data.results);
   const settings: object = {
+    className: 'center',
     infinite: true,
     dots: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToscroll: 1,
-    // eslint-disable-next-line react/display-name
-    appendDots: (dots: any) => (
-      <div className="divDots ">
-        <ul className="ulDots"> {dots} </ul>
-      </div>
-    ),
-    // eslint-disable-next-line react/display-name
-    customPaging: (i: any) => <div className="divCustomPaging">{i + 1}</div>,
+    speed: 400,
+    slidesToShow: 2,
+    slidesToscroll: 2,
+    mobileFirst: true,
   };
 
   const sumar = () => {
-    if (confirm('Estás seguro de haBer completado todas las preguntas')) {
+    if (confirm('Estás seguro de haber completado todas las preguntas')) {
       dispatch(counterPoint(control));
       setTimeout(() => {
         history.push('/cardinfopoints');
@@ -39,14 +33,15 @@ const CardQuestions = () => {
   };
 
   return (
-    <div>
+    <div className="divWrapper">
       <div className="divmain">
         <Slider {...settings}>
           {dataApi &&
             dataApi.map((item: ICardQuestions, index: number) => (
               <div className="cardDiv" key={index}>
                 <h1>
-                  <span className="title">{t('cardQuestions.title')}</span> {item.category}
+                  <span className="title">{t('cardQuestions.title')}</span>{' '}
+                  <span className="title">{item.category}</span>
                 </h1>
                 <p>
                   <span className="spanCard">{t('cardQuestions.span-one')}:</span> {item.difficulty}
@@ -97,7 +92,7 @@ const CardQuestions = () => {
             ))}
         </Slider>
       </div>
-      <div className="divButton ">
+      <div className="divButton">
         <h3>{t('cardQuestions.subtitle')}</h3>
         <button className="Button " onClick={sumar}>
           {t('cardQuestions.button')}

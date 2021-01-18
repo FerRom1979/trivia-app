@@ -10,7 +10,7 @@ import CardInfoPoints from './components/cardInfoPoints/index';
 
 function App() {
   return (
-    <div className="App" style={{ height: '100%', margin: 0, padding: 0, fontFamily: 'Fira Sans' }}>
+    <div className="App" style={{ height: '100%', margin: 0, padding: 0 }}>
       <Header />
       <Router>
         <Switch>
