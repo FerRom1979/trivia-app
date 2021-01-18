@@ -7,7 +7,7 @@ export const WrapperDiv = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #bb8fce;
+  background-color: #f1c40f;
 `;
 export const FormControl = styled.form`
   display: flex;
@@ -21,21 +21,23 @@ export const InputForm = styled.input`
   border: none;
   background-color: #f1f1f1;
   border-radius: 4px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   margin-bottom: 10px;
   font-size: 20px;
   cursor: pointer;
 `;
 export const DivMenssage = styled.div`
+  background-color: #c0392b;
+
   min-width: 200px;
   max-width: 500px;
-  border: 3px solid #1b4f72;
+
   border-radius: 5px;
   margin-bottom: 20px;
 `;
 export const PMenssage = styled.p`
-  font-size: 40px;
-  color: black;
+  font-size: 30px;
+  color: white;
   text-align: center;
 `;
 export const SelectForm = styled.select`
@@ -56,7 +58,7 @@ export const SpanForm = styled.span`
 export const ButtonForm = styled.button`
   padding: 10px 12px;
   color: white;
-  background-color: #1b4f72;
+  background-color: #c0392b;
   font-size: 16px;
   text-decoration: none;
   border: none;
