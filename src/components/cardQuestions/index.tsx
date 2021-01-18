@@ -58,20 +58,37 @@ const CardQuestions = () => {
                 <p>
                   <span className="spanCard">{t('cardQuestions.span-three')}:</span> {index + 1}
                 </p>
-                <form>
-                  <div className="divQuestions">
+                <form style={{ display: 'flex', flexDirection: 'column' }}>
+                  <div
+                    className="divQuestions"
+                    style={{ order: Math.floor(Math.random() * (5 - 1 + 1) + 1) }}
+                  >
                     <p>{item.correct_answer}</p>
-                    <input type="radio" name="two" onClick={() => setControl(control + 1)} />
+                    <input
+                      type="radio"
+                      name="two"
+                      onClick={() => setControl(control + 1)}
+                      style={{ order: 0 }}
+                    />
                   </div>
-                  <div className="divQuestions">
+                  <div
+                    className="divQuestions"
+                    style={{ order: Math.floor(Math.random() * (5 - 1 + 1) + 1) }}
+                  >
                     <p>{item.incorrect_answers[0]}</p>
                     <input type="radio" name="two" />
                   </div>
-                  <div className="divQuestions">
+                  <div
+                    className="divQuestions"
+                    style={{ order: Math.floor(Math.random() * (5 - 1 + 1) + 1) }}
+                  >
                     <p>{item.incorrect_answers[1]}</p>
                     {item.incorrect_answers[2] && <input type="radio" name="two" />}
                   </div>
-                  <div className="divQuestions">
+                  <div
+                    className="divQuestions"
+                    style={{ order: Math.floor(Math.random() * (5 - 1 + 1) + 1) }}
+                  >
                     <p>{item.incorrect_answers[2]}</p>
                     {item.incorrect_answers[2] && <input type="radio" name="two" />}
                   </div>
