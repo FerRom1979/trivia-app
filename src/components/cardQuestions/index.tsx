@@ -13,7 +13,7 @@ const CardQuestions = () => {
   const dispatch = useDispatch();
   const [control, setControl] = useState(0);
   const dataApi = useSelector((state: any) => state.api.data.results);
-  const settings: any = {
+  const settings: object = {
     infinite: true,
     dots: true,
     speed: 500,
@@ -30,10 +30,12 @@ const CardQuestions = () => {
   };
 
   const sumar = () => {
-    dispatch(counterPoint(control));
-    setTimeout(() => {
-      history.push('/cardinfopoints');
-    }, 1000);
+    if (confirm('Estás seguro de haBer completado todas las preguntas')) {
+      dispatch(counterPoint(control));
+      setTimeout(() => {
+        history.push('/cardinfopoints');
+      }, 1000);
+    }
   };
 
   return (

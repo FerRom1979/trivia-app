@@ -25,17 +25,13 @@ const Hompage = () => {
   } = style;
   const { register, handleSubmit, errors } = useForm<IFormQuestions>();
   const onSubmit = (data: IFormQuestions, e: any) => {
-    console.log(data);
-
     const amount = data.questions;
     const difficulty = data.difficulty;
     const typeform = data.type;
     dispatch(addDataApi(amount, difficulty, typeform));
-
     e.target.reset();
   };
-  console.log(dataApi);
-  if (dataApi !== undefined)
+  if (dataApi !== undefined && dataApi.length !== 0)
     setTimeout(() => {
       history.push('/cardquestions');
     }, 1000);
@@ -59,7 +55,7 @@ const Hompage = () => {
 
           <SpanForm>{t('homepage.span-form-two')}</SpanForm>
           <SelectForm name="difficulty" ref={register({ required: true })}>
-            <option value=" ">{t('homepage.option-one')}</option>
+            <option value="">{t('homepage.option-one')}</option>
             <option value="easy">{t('homepage.option-two')}</option>
             <option value="medium">{t('homepage.option-three')}</option>
             <option value="hard">{t('homepage.option-four')}</option>
@@ -67,7 +63,7 @@ const Hompage = () => {
 
           <SpanForm>{t('homepage.span-form-three')}</SpanForm>
           <SelectForm name="type" ref={register({ required: true })}>
-            <option value=" ">{t('homepage.option-five')}</option>
+            <option value="">{t('homepage.option-five')}</option>
             <option value="multiple">{t('homepage.option-six')}</option>
             <option value="boolean">{t('homepage.option-seven')}</option>
           </SelectForm>

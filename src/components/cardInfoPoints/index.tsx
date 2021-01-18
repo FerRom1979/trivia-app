@@ -1,17 +1,30 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import * as style from './style';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { useHistory } from 'react-router-dom';
+import { addDataApi } from '../../redux/actions/index';
 
 const CardInfoPoints = () => {
+  const dispatch = useDispatch();
+  const history = useHistory();
   const [t] = useTranslation('global');
-  const { WrapperDiv, Card, PLink, Header, DivLink } = style;
+  const { WrapperDiv, Card, Header, DivLink, SpanLink, ButtonLink } = style;
   const point = useSelector((state: any) => state.counter.points);
   const dataApi = useSelector((state: any) => state.api.data.results);
   const users = useSelector((state: any) => state.login.users);
 
   const porcentaje: number = (point * 100) / dataApi.length;
+  const volver = () => {
+    const amount = 0,
+      difficulty = '',
+      typeform = '';
+    dispatch(addDataApi(amount, difficulty, typeform));
+    setTimeout(() => {
+      history.push('/');
+    }, 1000);
+  };
 
   return (
     <div>
@@ -45,16 +58,15 @@ const CardInfoPoints = () => {
             <p>{users.length !== 0 && users[0].name.toUpperCase()} </p>
             <p>{t('cardinfopoints.title-final')}</p>
             <DivLink>
-              <PLink>
-                <Link to="/cardquestions">
-                  <PLink>{t('cardinfopoints.link-one')}</PLink>
+              <ButtonLink>
+                <Link to="/cardquestions" style={{ textDecoration: 'none' }}>
+                  <SpanLink>{t('cardinfopoints.link-one')}</SpanLink>
                 </Link>
-              </PLink>
-              <PLink>
-                <Link to="/">
-                  <PLink>{t('cardinfopoints.link-two')}</PLink>
-                </Link>
-              </PLink>
+              </ButtonLink>
+
+              <ButtonLink onClick={volver}>
+                <SpanLink>{t('cardinfopoints.link-two')}</SpanLink>
+              </ButtonLink>
             </DivLink>
           </footer>
         </Card>
